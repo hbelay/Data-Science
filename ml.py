@@ -1,3 +1,6 @@
+
+# import packages and modules
+
 import pandas as pd 
 import numpy as np 
 import matplotlib.pyplot as plt
@@ -23,13 +26,13 @@ winedf = pd.read_csv('winequality-red.csv',sep=';')
 print winedf.head(3)
 
 #+++++++++++++++++++++++++++++++++++++++++++++++++++++++
-#+ check whether the labels are unblanced or not
+#+ check if the labels are unblanced or not
 #+++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-#print winedf.shape
-#ylab = winedf[['quality']]
-#print ylab.shape
-#print winedf['quality'].value_counts() # indeed it is
+print winedf.shape
+ylab = winedf[['quality']]
+print ylab.shape
+print winedf['quality'].value_counts() # indeed it is
 
 #++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
